@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px
+}
+
+h1 {
+    text-align: center;
+    text-decoration: none;
+    padding-top: 50px;
+    color: white;
+    background-color: rgba(100, 98, 98, 0.8);
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.caja {
+    display: flex;
+    /*flex-flow: row wrap;*/
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+@supports(object-fit: cover) {
+    .box img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+.content a {
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+}
+
+.precio {
+    font-size: xx-large;
+    padding: 10px 0 5px 0;
+}
+
+.productName {
+    font-size: xx-large;
+}
+
+.addCart {
+    padding-top: 5px;
+    padding: 10px 0 15px 0;
+}
+
+input {
+    font-size: 20px;
+}
+
+table {
+    padding-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    margin: 5px;
+}
+
+table,
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+th {
+    background-color: rgba(75, 73, 73, 0.8);
+    color: white;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.showPriceFinal {
+    margin-top: 25px;
+    font-size: x-large;
+}
